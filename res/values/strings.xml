@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Zakat.Math</string>
+
+
+        <!-- Other strings -->
+        <string-array name="gold_types">
+            <item>Keep</item>
+            <item>Wear</item>
+        </string-array>
+
+
+</resources>

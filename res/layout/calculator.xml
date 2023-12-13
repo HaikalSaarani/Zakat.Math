@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/calculator_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/calculator_toolbar"
+        android:padding="16dp">
+
+    <TextView
+        android:id="@+id/gold_weight_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gold Weight (grams):"
+        android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/gold_weight_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:hint="Enter gold weight in grams" />
+
+    <TextView
+        android:id="@+id/gold_type_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gold Type:"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp" />
+
+        <Spinner
+            android:id="@+id/gold_type_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/gold_types"
+            android:textColor="@color/black"
+            android:contentDescription="Select type of gold" />
+
+
+        <TextView
+        android:id="@+id/gold_value_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gold Value per Gram:"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/gold_value_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Gold Value per gram"
+        android:textColor="@color/black"
+        android:inputType="numberDecimal" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+
+        android:id="@+id/total_value_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Gold Value:"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/total_value_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@android:color/black" />
+
+
+        <TextView
+        android:id="@+id/zakat_payable_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zakat Payable:"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/zakat_payable_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/total_zakat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Zakat:"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/total_zakat_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black"
+            android:layout_marginTop="16dp" />
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate Zakat"
+            android:background="@drawable/rounded_button_background"
+            android:layout_marginTop="16dp" />
+
+
+
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_button_background"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
